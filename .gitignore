@@ -3,3 +3,5 @@ __pycache__
 *.out
 output_dir_lora
 output/0504-speed
+path_to_rm_checkpoint
+path_to_checkpoint

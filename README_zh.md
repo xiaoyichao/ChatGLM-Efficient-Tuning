@@ -137,7 +137,7 @@ accelerate launch src/finetune.py # 参数同上
 ```bash
 CUDA_VISIBLE_DEVICES=0 python src/train_rm.py \
     --do_train \
-    --dataset comparison_gpt4_en \
+    --dataset comparison_gpt4_zh \
     --finetuning_type lora \
     --output_dir path_to_rm_checkpoint \
     --per_device_train_batch_size 4 \
@@ -155,7 +155,7 @@ CUDA_VISIBLE_DEVICES=0 python src/train_rm.py \
 ```bash
 CUDA_VISIBLE_DEVICES=0 python src/train_ppo.py \
     --do_train \
-    --dataset alpaca_gpt4_en \
+    --dataset alpaca_gpt4_zh \
     --finetuning_type lora \
     --reward_model path_to_rm_checkpoint \
     --output_dir path_to_ppo_checkpoint \

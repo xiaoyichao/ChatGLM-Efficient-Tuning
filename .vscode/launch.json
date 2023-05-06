@@ -1,0 +1,38 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: RM",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--do_train" ,
+                "--dataset", "comparison_gpt4_zh" ,
+                "--finetuning_type", "lora",
+                "--output_dir", "path_to_rm_checkpoint",
+                "--per_device_train_batch_size", "4",
+                "--gradient_accumulation_steps", "4" ,
+                "--lr_scheduler_type", "cosine",
+                "--logging_steps", "10" ,
+                "--save_steps", "1000",
+                "--learning_rate", "5e-5",
+                "--num_train_epochs", "1.0",
+                "--fp16"
+            ]
+        }
+    ]
+}
