@@ -132,8 +132,10 @@ CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
     --save_total_limit 2 \
     --save_strategy epoch \
     --learning_rate 5e-5 \
-    --num_train_epochs 5.0 \
+    --num_train_epochs 1.0 \
     --fp16
+
+nohup bash finetune.sh  > nohup.out 2>&1 &
 ```
 
 关于参数信息，请查阅我们的[维基](https://github.com/hiyouga/ChatGLM-Efficient-Tuning/wiki)。
