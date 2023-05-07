@@ -119,6 +119,21 @@ CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
     --learning_rate 5e-5 \
     --num_train_epochs 1.0 \
     --fp16
+  
+CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
+    --do_train \
+    --dataset alpaca_gpt4_zh \
+    --finetuning_type lora \
+    --output_dir path_to_checkpoint \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --save_total_limit 2 \
+    --save_strategy epoch \
+    --learning_rate 5e-5 \
+    --num_train_epochs 5.0 \
+    --fp16
 ```
 
 关于参数信息，请查阅我们的[维基](https://github.com/hiyouga/ChatGLM-Efficient-Tuning/wiki)。
@@ -149,7 +164,7 @@ CUDA_VISIBLE_DEVICES=0 python src/train_rm.py \
     --num_train_epochs 1.0 \
     --fp16
 ```
-
+/app/ChatGLM-Deepspeed-LoRA/output/0504-speed
 ### RLHF 训练
 
 ```bash
