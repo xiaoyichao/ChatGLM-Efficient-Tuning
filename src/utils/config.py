@@ -8,7 +8,8 @@ from dataclasses import dataclass, field
 # CHATGLM_LASTEST_HASH = "a8ede826cf1b62bd3c78bdfb3625c7c5d2048fbd"
 
 CHATGLM_REPO_NAME = "/root/autodl-tmp/chatglm-6b"
-CHATGLM_LASTEST_HASH = "f83182484538e663a03d3f73647f10f89878f438"
+# CHATGLM_LASTEST_HASH = "f83182484538e663a03d3f73647f10f89878f438"
+CHATGLM_LASTEST_HASH = "4d0fc39a58dcb747ab74ab2c4587bd66dcfa7e74"
 
 
 @dataclass
