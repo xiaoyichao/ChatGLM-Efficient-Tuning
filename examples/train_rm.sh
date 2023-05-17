@@ -2,7 +2,7 @@
 
 CUDA_VISIBLE_DEVICES=0 python ../src/train_rm.py \
     --do_train \
-    --dataset comparison_gpt4_en \
+    --dataset comparison_gpt4_zh \
     --dataset_dir ../data \
     --finetuning_type lora \
     --output_dir path_to_rm_checkpoint \
